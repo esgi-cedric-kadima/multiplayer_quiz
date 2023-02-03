@@ -1,20 +1,11 @@
-const http = require('http');
-const fs = require('fs');
+const reponse = document.getElementById('answer1');
+const socket = new WebSocket('ws://localhost:8765');
 
-const port = 3000;
-
-const server = http.createServer((req, res) => {
-    fs.readFile('main.html', (err, data) => {
-        if (err) {
-            res.writeHead(500, { 'Content-Type': 'text/plain' });
-            res.end('Error loading main.html');
-        } else {
-            res.writeHead(200, { 'Content-Type': 'text/html' });
-            res.end(data);
-        }
-    });
+reponse.addEventListener('click', function () {
+    console.log('clickChoice');
+    socket.send('choicePlayer');
 });
 
-server.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
-});
+socket.onmessage = function (event) {
+    console.log('Received message: ', event.data);
+};
