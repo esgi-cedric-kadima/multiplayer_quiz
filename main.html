@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <script>
+        const socket = new WebSocket("ws://localhost:8000");
+        socket.onopen = function () {
+            console.log("Connected to server");
+        };
+        socket.onclose = function () {
+            console.error("Disconnected from server");
+        };
+        socket.onmessage = function (event) {
+            const message = JSON.parse(event.data);
+            if (message.type === "question") {
+                document.getElementById("question").innerHTML = message.question;
+                document.getElementById("answer-a").innerHTML = message.answers[0];
+                document.getElementById("answer-b").innerHTML = message.answers[1];
+                document.getElementById("answer-c").innerHTML = message.answers[2];
+                document.getElementById("answer-d").innerHTML = message.answers[3];
+            } else if (message.type === "result") {
+                if (message.correct) {
+                    document.getElementById("result").innerHTML = "Correct!";
+                } else {
+                    document.getElementById("result").innerHTML = "Incorrect.";
+                }
+            } else if (message.type === "score") {
+                document.getElementById("score").innerHTML = message.score;
+            }
+        };
+
+        function sendAnswer(answer) {
+            socket.send(
+                JSON.stringify({
+                    type: "answer",
+                    answer: answer
+                })
+            );
+        }
+    </script>
+    <script>src = "main.js"</script>
+</head>
+
+<body>
+    <div id="question">Loading...</div>
+    <div id="answers">
+        <button id="answer-a" onclick="sendAnswer('a')"></button>
+        <button id="answer-b" onclick="sendAnswer('b')"></button>
+        <button id="answer-c" onclick="sendAnswer('c')"></button>
+        <button id="answer-d" onclick="sendAnswer('d')"></button>
+    </div>
+    <div id="result"></div>
+    <div id="score">0</div>
+</body>
+
+</html>
