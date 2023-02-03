@@ -1,6 +1,10 @@
 import json
 
-with open('questions.json') as json_file:
-    questions = json.load(json_file)
+with open("questions.json", "r") as file:
+    data = json.load(file)
 
-print(questions)
+for item in data:
+    print("Question: ", item["question"])
+    print("Correct answer: ", item["correct_answer"])
+    print("Incorrect answers: ", item["incorrect_answers"])
+    print("---")

@@ -1,122 +1,57 @@
 [
   {
-    "category": "Vehicles",
-    "type": "multiple",
-    "difficulty": "easy",
-    "question": "Where are the cars of the brand &quot;Ferrari&quot; manufactured?",
-    "correct_answer": "Italy",
-    "incorrect_answers": [
-      "Romania",
-      "Germany",
-      "Russia"
-    ]
+    "id": "0",
+    "question": "What is the capital of India ?",
+    "options": [
+      "Delhi",
+      "Mumbai",
+      "Kolkata",
+      "Chennai"
+    ],
+    "answer": "Delhi"
   },
   {
-    "category": "Entertainment: Music",
-    "type": "multiple",
-    "difficulty": "easy",
-    "question": "Which country does the band Rammstein hail from?",
-    "correct_answer": "Germany",
-    "incorrect_answers": [
-      "Austria",
-      "Armenia",
-      "Belgium"
-    ]
+    "id": "1",
+    "question": "What is the capital of France ?",
+    "options": [
+      "Lyon",
+      "Marseille",
+      "Bordeaux",
+      "Paris"
+    ],
+    "answer": "Paris"
   },
   {
-    "category": "Entertainment: Cartoon & Animations",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "Which city did Anger berate for ruining pizza in &quot;Inside Out&quot;?",
-    "correct_answer": "San Francisco",
-    "incorrect_answers": [
-      "Minnesota",
-      "Washington",
-      "California"
-    ]
+    "id": "2",
+    "question": "What is the capital of Brazil ?",
+    "options": [
+      "Rio de Janeiro",
+      "São Paulo",
+      "Brasília",
+      "Belo Horizonte"
+    ],
+    "answer": "Brasília"
   },
   {
-    "category": "Entertainment: Television",
-    "type": "multiple",
-    "difficulty": "easy",
-    "question": "In the Star Trek universe, what color is Vulcan blood?",
-    "correct_answer": "Green",
-    "incorrect_answers": [
-      "Blue",
-      "Red",
-      "Purple"
-    ]
+    "id": "3",
+    "question": "What is the capital of Germany ?",
+    "options": [
+      "Berlin",
+      "Hamburg",
+      "Munich",
+      "Frankfurt"
+    ],
+    "answer": "Berlin"
   },
   {
-    "category": "General Knowledge",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "When was Nintendo founded?",
-    "correct_answer": "September 23rd, 1889",
-    "incorrect_answers": [
-      "October 19th, 1891",
-      "March 4th, 1887",
-      "December 27th, 1894"
-    ]
-  },
-  {
-    "category": "Geography",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "Which country has the abbreviation &quot;CH&quot;?",
-    "correct_answer": "Switzerland",
-    "incorrect_answers": [
-      "China",
-      "Canada",
-      "No Country"
-    ]
-  },
-  {
-    "category": "Entertainment: Film",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "In &quot;Star Trek Nemesis&quot;, why was Praetor Shinzon created?",
-    "correct_answer": "To replace Picard as a Romulan Agent",
-    "incorrect_answers": [
-      "To destroy the Enterprise",
-      "To become Picard&#039;s friend ",
-      "To steal the Enterprise"
-    ]
-  },
-  {
-    "category": "Entertainment: Japanese Anime & Manga",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "In &quot;JoJo&#039;s Bizarre Adventure&quot;, which of the following Stands does NOT have a time-based ability?",
-    "correct_answer": "20th Century Boy",
-    "incorrect_answers": [
-      "Made in Heaven",
-      "Star Platinum",
-      "The World"
-    ]
-  },
-  {
-    "category": "Entertainment: Music",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "&quot;Make You Feel My Love&quot; was originally written and performed by which singer-songwriter?",
-    "correct_answer": "Bob Dylan",
-    "incorrect_answers": [
-      "Elvis",
-      "Adele",
-      "Billy Joel"
-    ]
-  },
-  {
-    "category": "Entertainment: Comics",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "What is Hellboy&#039;s true name?",
-    "correct_answer": "Anung Un Rama",
-    "incorrect_answers": [
-      "Right Hand of Doom",
-      "Ogdru Jahad",
-      "Azzael"
-    ]
+    "id": "4",
+    "question": "What is the capital of Russia ?",
+    "options": [
+      "Moscow",
+      "St. Petersburg",
+      "Kazan",
+      "Novosibirsk"
+    ],
+    "answer": "Moscow"
   }
 ]

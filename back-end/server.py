@@ -4,10 +4,14 @@ import json
 
 import websockets
 
-with open('questions.json') as json_file:
-    questions = json.load(json_file)
-
-print(questions)
+with open("questions.json", "r") as file:
+    data = json.load(file)
+for item in data:
+    # print("id:", item["id"])
+    # print("question:", item["question"])
+    # print("options:", item["options"])
+    # print("answer:", item["answer"])
+    print(json.dumps(item))
 
 
 async def handle_message(websocket, path):
@@ -15,7 +19,7 @@ async def handle_message(websocket, path):
         message = await websocket.recv()
         if message == 'startGame':
             print('Received message: ', message)
-            await websocket.send(str(questions))
+            await websocket.send(json.dumps(item))
         elif message == 'choicePlayer':
             print('Player 1 made a choice: ', message)
         elif message == 'choicePlayer2':
